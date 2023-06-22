@@ -6,12 +6,10 @@ import React from "react"; //Para funcionar sintaxe JSX
 //ReactDom.render("Olá React!!", document.getElementById("root"));
 
 //rodar funções de outros arquivos
-import Primeiro from "./components/basicos/Primeiro";
+import App from "./App";
 
 ReactDom.render(
   //sintaxe JSX (<div>Olá React!!</div>)
-  <div>
-    <Primeiro></Primeiro>
-  </div>,
+  <App></App>,
   document.getElementById("root")
 );
