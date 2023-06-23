@@ -7,6 +7,7 @@ import MinMax from "./components/basicos/MinMax";
 import Card from "./components/layout/card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -15,7 +16,11 @@ export default () => {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
-        <Card titulo="04 - Componente com Filhos" color="#00C8F8">
+        <Card titulo="06 - Repetição" color="#FF4C65">
+          <ListaAlunos></ListaAlunos>
+        </Card>
+
+        <Card titulo="05 - Componente com Filhos" color="#00C8F8">
           <Familia sobrenome="Arruda">
             <FamiliaMembro nome="Abner" />
             <FamiliaMembro nome="Pedro" />
