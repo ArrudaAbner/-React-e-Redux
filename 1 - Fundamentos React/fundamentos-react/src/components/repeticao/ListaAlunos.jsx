@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import alunos from "../../data/alunos";
 
-export default (props) => {
+export default () => {
   const alunosListJSX = alunos.map((aluno) => {
     return (
       <li key={aluno.id}>
