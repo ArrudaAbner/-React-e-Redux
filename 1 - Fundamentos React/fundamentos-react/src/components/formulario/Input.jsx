@@ -11,14 +11,10 @@ export default (props) => {
 
   return (
     <div className="Input">
-      <h2>{valor}</h2>
       <div
         style={{
           display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-          width: "400px",
+          flexDirection: "column",
         }}
       >
         <label htmlFor="controlado">Controlado: </label>

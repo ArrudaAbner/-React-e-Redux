@@ -21,3 +21,7 @@
 .Input input:focus {
   border-color: #333;
 }
+
+.label, input {
+    margin: 10px;
+}
