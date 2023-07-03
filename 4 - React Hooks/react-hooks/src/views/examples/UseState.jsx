@@ -43,7 +43,7 @@ const UseState = (props) => {
         type="text"
         className="input"
         value={name}
-        onChange={(e) => console.log(setName(e.target.value))}
+        onChange={(e) => setName(e.target.value)}
       />
       <span className="text">{name}</span>
     </div>
