@@ -11,14 +11,16 @@ const App = (props) => {
   const [state, setState] = useState(data);
 
   return (
-    <DataContext.Provider value={{ state, setState }}>
-      <div className="App">
-        <Router>
-          <Menu />
-          <Content />
-        </Router>
-      </div>
-    </DataContext.Provider>
+    <store>
+      <DataContext.Provider value={{ state, setState }}>
+        <div className="App">
+          <Router>
+            <Menu />
+            <Content />
+          </Router>
+        </div>
+      </DataContext.Provider>
+    </store>
   );
 };
 
