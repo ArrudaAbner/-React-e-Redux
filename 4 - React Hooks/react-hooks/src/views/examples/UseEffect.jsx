@@ -10,16 +10,6 @@ function calcFatorial(num) {
   return calcFatorial(n - 1) * n;
 }
 
-/* Exercicio 2  */
-function calcPar(num) {
-  const n = parseInt(num);
-  if (n % 2 === 0) {
-    return "Par";
-  } else {
-    return "Impar";
-  }
-}
-
 const UseEffect = () => {
   /* Exercicio 1  */
   const [number, setNumber] = useState(1);
@@ -38,7 +28,7 @@ const UseEffect = () => {
 
   useEffect(
     function () {
-      setPar(calcPar(num));
+      setPar(num % 2 === 0 ? "Par" : "Ímpar");
     },
     [num]
   );
