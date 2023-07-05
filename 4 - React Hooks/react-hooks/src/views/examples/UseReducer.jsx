@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 import PageTitle from "../../components/layout/PageTitle";
 
 const initialState = {
@@ -23,6 +23,8 @@ function reducer(state, action) {
 const UseReducer = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const [name, setName] = useState("");
+
   return (
     <div className="UseReducer">
       <PageTitle
@@ -31,6 +33,16 @@ const UseReducer = (props) => {
       />
 
       <div className="center">
+        <span>
+          <span className="text">Login: </span>
+          <input
+            type="text"
+            className="input"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </span>
+
         {state.user ? (
           <span className="text">{state.user.name}</span>
         ) : (
@@ -47,7 +59,7 @@ const UseReducer = (props) => {
           </button>
           <button
             className="btn"
-            onClick={() => dispatch({ type: "login", payload: "Maria" })}
+            onClick={() => dispatch({ type: "login", payload: name })}
           >
             Login
           </button>
