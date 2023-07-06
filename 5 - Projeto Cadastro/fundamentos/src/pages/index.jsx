@@ -1,3 +1,9 @@
+import Link from "next/link";
+
 export default function Inicio() {
-    return "Inicio 2"
+  return (
+    <div>
+      <a href="/estiloso">Estiloso</a>
+    </div>
+  );
 }
