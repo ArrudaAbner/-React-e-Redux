@@ -1,11 +1,12 @@
 import Cabecalho from "@/components/Cabecalho";
+import Layout from "@/components/Layout";
 
 export default function Exemplo(props) {
   console.log(props);
   return (
-    <div>
-      <Cabecalho></Cabecalho>
-      <h2>Exemplo</h2>
-    </div>
+    <Layout titulo="Exemplo de CSS Modularizado">
+      <Cabecalho titulo="Next.js & React"></Cabecalho>
+      <Cabecalho titulo="Aprenda Next na prática"></Cabecalho>
+    </Layout>
   );
 }
