@@ -15,6 +15,7 @@ export default function Inicio() {
       <Navegador destino="/exemplo" texto="Exemplo" cor="#9400d3"></Navegador>
       <Navegador destino="/jsx" texto="JSX" cor="crimson"></Navegador>
       <Navegador texto="Navegação #01" destino="/navegacao" cor="green"></Navegador>
+      <Navegador texto="Navegação #02" destino="/cliente/sp-2/123" cor="orange"></Navegador>
     </div>
   );
 }
