@@ -2,7 +2,7 @@ import Cliente from "@/core/Cliente";
 import { IconEdicao, IconeLixo } from "./Icones";
 
 interface TabelaProps {
-  clientes: Cliente[];
+  clientes?: Cliente[];
   clienteSelecionado?: (cliente: Cliente) => void;
   clienteExcluido?: (cliente: Cliente) => void;
 }
